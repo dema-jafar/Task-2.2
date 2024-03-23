@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inconsolata", monospace;
+}
+
+.head nav {
+    height: 70px;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    z-index: 1;
+}
+
+.head .navbar {
+    height: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    list-style-type: none;
+    padding: 0 5px;
+}
+
+.head .navbar li {
+    width: 100%;
+    padding: 5px 0;
+}
+
+.head .navbar a{
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.head .navbar li:hover {
+    background-color: white;
+}
+
+.head .navbar li:hover a {
+    color: black;
+}
+
+.head .hero {
+    height: 100vh;
+    color: white;
+    position: relative;
+    background-image: url(../assets/img/coffeehouse.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.head .hero h1 {
+    font-size: 50px;
+    font-weight: normal;
+    width: 130px;
+    text-align: center;
+}
+
+.head .hero .left {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    padding: 5px;
+    font-size: 12px;
+    background-color: black;
+}
+
+.head .hero .right {
+    position: absolute;
+    bottom: 15px;
+    right: 30px;
+    font-size: 12px;
+}
+
+main {
+    background-color: #f7f5f2;
+}
+
+.container {
+    width: 50%;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.container .title {
+    width: max-content;
+    margin: 0 auto 50px;
+    padding: 0 8px;
+    font-weight: normal;
+    color: white;
+    background-color:black;
+}
+
+.container .about .paragraph {
+    margin: 20px 0;
+}
+
+.container .about .description {
+    background-color: #f1f1f1;
+    border-left: 5px solid #cccccc;
+    padding: 20px;
+}
+
+.container .about .description p:last-child {
+    margin-top: 15px;
+}
+
+.container img {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.container .about .opening_info {
+    display: flex;
+    gap: 5px;
+    margin: 20px 0;
+}
+
+.menu .tab {
+    box-shadow: 0 0 2px 2px #e1dfdb;
+}
+
+.menu .tab_head {
+    display: flex;
+    justify-content: space-around;
+    padding: 8px;
+}
+
+.menu .tab_head button {
+    width: 100%;
+    padding: 5px 0;
+    cursor: pointer;
+    color: black;
+    border-style: none;
+    background-color: transparent;
+}
+
+.menu .tab_head button:first-child {
+    background-color: #616161;
+    color: white;
+}
+
+.menu .tab_content {
+    padding: 50px 0 1px 20px;
+}
+
+.menu .tab_content  p {
+    color: #8b8b8a;
+    margin: 10px 0 50px;
+}
+
+
+.findus .paragraph {
+    margin: 20px 0;
+}
+
+.findus .paragraph span {
+    background-color: black;
+    color: white;
+    padding: 2px 5px;
+}
+
+.findus .contact {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.findus .contact input {
+    padding: 15px 5px;
+}
+
+.findus .contact input:focus {
+    background-color: #f7f5f2;
+    outline-color: transparent;
+}
+
+.findus .contact button {
+    width: max-content;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    font-size: 17px;
+    border-style: none;
+    cursor: pointer;
+}
+
+.findus .contact button:hover {
+    box-shadow: 1px 1px 5px 5px rgb(0, 0, 0, 0.5);
+    background-color: whitesmoke;
+    color: black;
+}
+
+footer {
+    height: 150px;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    color: black;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 80%;
+    }
+}
